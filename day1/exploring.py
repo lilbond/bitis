@@ -97,4 +97,4 @@ add(10,2), subtract(11, 3) etc.
 '''
 
 
-# Time to evaluate your guess and may be bit of programming Moksha :-).
+# Time to evaluate our guess and together try to get a bit of programming Moksha :-).
