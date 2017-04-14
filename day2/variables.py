@@ -126,6 +126,10 @@ def greet_again():
 def greet_again(message):
     print(message)
 
+    if message == "abc":
+        c = 1
+    return c  # note c is accessible outside if
+
 
 # what is argument type?
 def greet_again_type(message):

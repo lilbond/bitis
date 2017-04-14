@@ -30,3 +30,23 @@ def is_present(l, e):
             return True
 
 print(is_present(l, 3))
+
+
+# # count and print number is list
+#
+# def count_and_print(l):
+#     dic = {}
+#     length = len(l)
+#     for index in range(0, length):
+#         if dic[l[index]] is None:
+#             dic[l[index]] = 1
+#         else:
+#             dic[l[index]] = dic[l[index]] + 1
+#
+#     for key, value in dic.items():
+#         print(key, value)
+#
+#
+# l = [1, 2, 3, 4, 5, 2, 3, 4, 5, 6]
+#
+# count_and_print(l)
