@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'blogis/base/base_site.html' %}
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block customcss %}
+        <link rel="stylesheet" href="{% static 'css/blogis.css' %}">
+    {% endblock customcss %}
+
+    <title>Title</title>
+</head>
+<body>
+
+{% block message %}
+{% endblock %}
+
+
+{% block content %}
+<div class="leftpad">
+<h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+</div>
+{% endblock content %}
+
+
+</body>
+</html>
+

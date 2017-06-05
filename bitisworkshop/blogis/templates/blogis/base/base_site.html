@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    {% block customcss %}
+    {% endblock customcss %}
+
+    <title>
+        {% block title %}
+            My amazing DJango site
+        {% endblock %}
+    </title>
+</head>
+
+<body>
+    {% block message %}
+    {% endblock %}
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blogs/">Blogs</a></li>
+
+            <li><a href="{% url 'blog_add' %}" class="top-menu"><span class="glyphicon glyphicon-plus">Add Blog</span></a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
+

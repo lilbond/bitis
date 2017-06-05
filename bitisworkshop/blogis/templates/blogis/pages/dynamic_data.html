@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h3>Hello {{ name }},</h3><br/>
+We are doing seession on <b>{{subject}}</b> using <b>{{framework}}</b>
+</br></br>
+<h3> Days in week: </h3>
+{% for day in days %}
+    {% if day != 'Sunday' %}
+        {{ day }} <br/>
+    {% endif %}
+{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1><a href="/">Hello {{ name }},</a></h1>
+</div>
+We are doing seession on <b>{{subject}}</b> using <b>{{framework}}</b>
+</br></br>
+<h3> Days in week: </h3>
+{% for day in days %}
+    {% if day != 'Sunday' %}
+        {{ day }} <br/>
+    {% endif %}
+{% endfor %}
+
+</body>
+</html>
